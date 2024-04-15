@@ -1,4 +1,4 @@
-root {
+:root {
     --black: #191A19;
     --white: #fff5e0;
     --gray: #a1a1aa;
@@ -149,6 +149,7 @@ a {
     border: 2px solid black;
     width: 12.5rem;
     height: 12.5rem;
+    cursor: pointer;
 }
 
 /*Projects*/
@@ -242,4 +243,12 @@ textarea {
     width: 50rem;
     height: 4.375rem;
     resize: none;
+}
+/*Back to the top arrow*/
+.back-to-the-top {
+    top: 0rem;
+    left: 62rem;
+    position: fixed;
+    z-index: 0;
+    cursor: pointer;
 }

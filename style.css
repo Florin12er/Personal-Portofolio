@@ -246,9 +246,13 @@ textarea {
 }
 /*Back to the top arrow*/
 .back-to-the-top {
+    display: block;
     top: 0rem;
     left: 62rem;
     position: fixed;
     z-index: 0;
     cursor: pointer;
+}
+.hidden {
+    display: none;
 }

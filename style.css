@@ -256,3 +256,33 @@ textarea {
 .hidden {
     display: none;
 }
+
+/*Mobile small*/
+@media only screen and (max-width: 412px) {
+/* Dashboard */
+    * {
+      overflow-x: hidden; 
+        
+         }
+    .dashboard {
+        font-size: 0.7rem;
+        gap: 10px;
+    }
+    .contact {
+        margin-right: 10px;
+    }
+    .logo {
+        margin-right : 10px;
+    }
+/*About*/
+.about-me-text {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+}
+.about-content {
+    overflow: hidden;
+    height: 25rem;
+    margin-bottom: 50vh;
+}
+

@@ -240,7 +240,7 @@ footer {
 }
 
 textarea {
-    width: 50rem;
+    width: 60rem;
     height: 4.375rem;
     resize: none;
 }
@@ -259,14 +259,17 @@ textarea {
 
 /*Mobile small*/
 @media only screen and (max-width: 412px) {
-/* Dashboard */
+    /* Dashboard */
     * {
-      overflow-x: hidden; 
+        overflow-x: hidden; 
         
-         }
+    }
     .dashboard {
         font-size: 0.7rem;
         gap: 10px;
+        a {
+            font-size: 9px;
+        }
     }
     .contact {
         margin-right: 10px;
@@ -274,12 +277,125 @@ textarea {
     .logo {
         margin-right : 10px;
     }
-/*About*/
-.about-me-text {
+    /*About*/
+    .about-me-text {
         font-size: 0.7rem;
         padding: 10px;
     }
+    /* Skills  */
+    .skill {
+        width: 100px;
+        height: 100px;
+
+    }
+    .skills-content {
+        grid-template-columns: repeat(3, 6.5rem);
+    }
+    .skill-image {
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .skillTitle {
+        font-size: 10px;
+    }
+    /* Projects*/
+    .project {
+        width: 300px;
+    }
+    /* Contact */
+    .your-contact {
+        input {
+            width: 350px;
+        };
+        textarea {
+            width: 350px;
+        }
+    }
+    .submit {
+        position: relative;
+        left: 270px;
+        bottom: 20px;
+        grid-column: 1;
+        grid-row : 4
+    }
+.back-to-the-top {
+    left: 10rem;
 }
+
+}
+
+}
+/* Mobile big */
+@media only screen and (max-width: 500px) {
+    /* Dashboard */
+    * {
+        overflow-x: hidden;
+
+    }
+    .dashboard {
+        font-size: 0.7rem;
+        gap: 10px;
+        a {
+            font-size: 11px;
+        }
+    }
+    .contact {
+        margin-right: 10px;
+    }
+    .logo {
+        margin-right : 10px;
+    }
+    /*About*/
+    .about-me-text {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    /* Skills  */
+    .skill {
+        width: 100px;
+        height: 100px;
+
+    }
+    .skills-content {
+        grid-template-columns: repeat(3, 6.5rem);
+    }
+    .skill-image {
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .skillTitle {
+        font-size: 10px;
+    }
+    /* Projects*/
+    .project {
+        width: 300px;
+    }
+    /* Contact */
+    .your-contact {
+        input {
+            width: 350px;
+        };
+        textarea {
+            width: 350px;
+        }
+    }
+    .submit {
+        position: relative;
+        left: 270px;
+        bottom: 20px;
+        grid-column: 1;
+        grid-row : 4
+    }
+.back-to-the-top {
+    left: 10rem;
+}
+
+}
+
 .about-content {
     overflow: hidden;
     height: 25rem;

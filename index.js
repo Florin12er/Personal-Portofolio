@@ -1,3 +1,28 @@
+const skills = {
+    javascript: "https://www.javascript.com/",
+    css: "https://en.wikipedia.org/wiki/CSS",
+    html: "https://en.wikipedia.org/wiki/HTML",
+    react: "https://react.dev/",
+    sass: "https://sass-lang.com/",
+    linux: "https://en.wikipedia.org/wiki/Linux",
+    bash: "https://en.wikipedia.org/wiki/Bash_(Unix_shell)",
+    hugo: "https://gohugo.io/",
+    nodeJs: "https://nodejs.org/en"
+};
+
+// Function to open skill links
+function openSkillLink(skill) {
+    window.open(skills[skill]);
+}
+
+// Attach click event listener to skills
+Object.keys(skills).forEach(skill => {
+    document.querySelector("." + skill).addEventListener("click", () => {
+        openSkillLink(skill);
+    });
+});
+
+
 const body = document.body;
 const input = document.querySelector(".white-black");
 const projects = document.querySelectorAll(".project");
@@ -23,7 +48,7 @@ function toggleTheme() {
 
   body.style.background = bgColor;
   content.style.background = isWhiteTheme ? "#C84B31" : "#8DECB4";
-  arrow.style.stroke = isWhiteTheme ? "#FFF5E0" : "#161616";
+  arrow.style.fill = isWhiteTheme ? "#FFF5E0" : "#161616";
   body.style.color = textColor;
   contact.style.background = contactBgColor;
   dashboard.style.background = dashboardBgColor;

@@ -1,5 +1,5 @@
 :root {
-    --black: #191A19;
+    --black: #191a19;
     --white: #fff5e0;
     --gray: #a1a1aa;
 }
@@ -244,6 +244,7 @@ textarea {
     height: 4.375rem;
     resize: none;
 }
+
 /*Back to the top arrow*/
 .back-to-the-top {
     display: block;
@@ -253,147 +254,152 @@ textarea {
     z-index: 0;
     cursor: pointer;
 }
+
 .hidden {
     display: none;
 }
-
-/*Mobile small*/
-@media only screen and (max-width: 412px) {
-    /* Dashboard */
+/*Table Big*/
+@media only screen and (max-width: 1024px) {
     * {
-        overflow-x: hidden; 
-        
+        overflow-x: hidden;
     }
-    .dashboard {
-        font-size: 0.7rem;
-        gap: 10px;
-        a {
-            font-size: 9px;
-        }
-    }
-    .contact {
-        margin-right: 10px;
-    }
-    .logo {
-        margin-right : 10px;
-    }
+
     /*About*/
     .about-me-text {
-        font-size: 0.7rem;
+        font-size: 1rem;
         padding: 10px;
     }
-    /* Skills  */
-    .skill {
-        width: 100px;
-        height: 100px;
 
-    }
-    .skills-content {
-        grid-template-columns: repeat(3, 6.5rem);
-    }
-    .skill-image {
-        svg {
-            width: 80px;
-            height: 80px;
-        }
-    }
-    .skillTitle {
-        font-size: 10px;
-    }
     /* Projects*/
     .project {
-        width: 300px;
+        width: 700px;
     }
-    /* Contact */
+
     .your-contact {
         input {
-            width: 350px;
-        };
+            width: 600px;
+        }
+
         textarea {
-            width: 350px;
+            width: 600px;
         }
     }
-    .submit {
-        position: relative;
-        left: 270px;
-        bottom: 20px;
-        grid-column: 1;
-        grid-row : 4
+    .back-to-the-top {
+        left: 30rem;
     }
-.back-to-the-top {
-    left: 10rem;
+}
+/*Tablet*/
+@media only screen and (max-width: 834px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    /*About*/
+    .about-me-text {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Projects*/
+    .project {
+        width: 700px;
+    }
+
+    .your-contact {
+        input {
+            width: 600px;
+        }
+
+        textarea {
+            width: 600px;
+        }
+    }
+
+    .back-to-the-top {
+        left: 23rem;
+        top: 5rem;
+    }
 }
 
-}
-
-}
 /* Mobile big */
 @media only screen and (max-width: 500px) {
+
     /* Dashboard */
     * {
         overflow-x: hidden;
-
     }
+
     .dashboard {
         font-size: 0.7rem;
         gap: 10px;
+
         a {
             font-size: 11px;
         }
     }
+
     .contact {
         margin-right: 10px;
     }
+
     .logo {
-        margin-right : 10px;
+        margin-right: 10px;
     }
+
     /*About*/
     .about-me-text {
         font-size: 0.7rem;
         padding: 10px;
     }
+
     /* Skills  */
     .skill {
         width: 100px;
         height: 100px;
-
     }
+
     .skills-content {
         grid-template-columns: repeat(3, 6.5rem);
     }
+
     .skill-image {
         svg {
             width: 80px;
             height: 80px;
         }
     }
+
     .skillTitle {
         font-size: 10px;
     }
+
     /* Projects*/
     .project {
         width: 300px;
     }
+
     /* Contact */
     .your-contact {
         input {
             width: 350px;
-        };
+        }
+
         textarea {
             width: 350px;
         }
     }
+
     .submit {
         position: relative;
         left: 270px;
         bottom: 20px;
         grid-column: 1;
-        grid-row : 4
+        grid-row: 4;
     }
-.back-to-the-top {
-    left: 10rem;
-}
 
+    .back-to-the-top {
+        left: 10rem;
+    }
 }
 
 .about-content {
@@ -401,4 +407,87 @@ textarea {
     height: 25rem;
     margin-bottom: 50vh;
 }
+
+
+/*Mobile small*/
+@media only screen and (max-width: 412px) {
+
+    /* Dashboard */
+    * {
+        overflow-x: hidden;
+    }
+
+    .dashboard {
+        font-size: 0.7rem;
+        gap: 10px;
+
+        a {
+            font-size: 12px;
+        }
+    }
+
+    .contact {
+        margin-right: 10px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+
+    /*About*/
+    .about-me-text {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+
+    /* Skills  */
+    .skill {
+        width: 100px;
+        height: 100px;
+    }
+
+    .skills-content {
+        grid-template-columns: repeat(3, 6.5rem);
+    }
+
+    .skill-image {
+        svg {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .skillTitle {
+        font-size: 10px;
+    }
+
+    /* Projects*/
+    .project {
+        width: 300px;
+    }
+
+    /* Contact */
+    .your-contact {
+        input {
+            width: 350px;
+        }
+
+        textarea {
+            width: 350px;
+        }
+    }
+
+    .submit {
+        position: relative;
+        left: 270px;
+        bottom: 20px;
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .back-to-the-top {
+        left: 10rem;
+    }
+}
+
 

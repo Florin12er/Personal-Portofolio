@@ -48,7 +48,7 @@ function toggleTheme() {
 
   body.style.background = bgColor;
   content.style.background = isWhiteTheme ? "#C84B31" : "#8DECB4";
-  arrow.style.fill = isWhiteTheme ? "#FFF5E0" : "#161616";
+  arrow.style.stroke = isWhiteTheme ? "#FFF5E0" : "#161616";
   body.style.color = textColor;
   contact.style.background = contactBgColor;
   dashboard.style.background = dashboardBgColor;

@@ -31,6 +31,7 @@ a {
 /*black and white switch*/
 /* The switch - the box around the slider */
 .switch {
+    overflow: hidden;
     position: relative;
     display: inline-block;
     width: 3.75rem;
@@ -259,6 +260,16 @@ textarea {
     display: none;
 }
 /*Table Big*/
+@media only screen and (max-width: 1440px) {
+  .about-me-text {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+.back-to-the-top {
+        left: 43rem;
+    }
+
+}
 @media only screen and (max-width: 1024px) {
     * {
         overflow-x: hidden;
